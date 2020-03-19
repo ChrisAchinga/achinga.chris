@@ -10,12 +10,20 @@
 
   <!-- font-awesome -->
   <script src="https://kit.fontawesome.com/52ac5380d0.js" crossorigin="anonymous"></script>
+
+  <!-- aos css -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+  <header>
+    <div class="container">
+      <h1>I  
+        <span class="txt-type" data-wait="3000" data-words='["am Chris Achinga", "am a Software Developer", "also code for fun"]'></span>
+      </h1>
+    </div>
+  </header>
   <div class="container">
-    <h1>I  
-      <span class="txt-type" data-wait="3000" data-words='["am Chris Achinga", "am a Software Developer/Designer", "school at Zetech University", "also code for fun", "listen to Music for fun too."]'></span>
-    </h1>
+    
     <!-- link to githb account -->
     <h2><a href="http://www.github.com/ChrisAchinga" target="_blank">
       <i class="fab fa-github-square"></i>
@@ -43,7 +51,14 @@
     </h2>
    </div>
   </div>
+  
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
+  <!-- my js -->
   <script src="js/script.js"></script>
 </body>
 </html>
