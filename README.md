@@ -4,4 +4,4 @@ My portfolio/website
 
 ## About Me
 
-I am Programmer
+This is my Portfolio
