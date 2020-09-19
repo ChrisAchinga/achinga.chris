@@ -44,7 +44,8 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Social</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://theboringblog.netlify.app/" target="_blank">Blog</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://theboringblog.netlify.app/"
+              target="_blank">Blog</a>
           </li>
         </ul>
       </div>
@@ -58,7 +59,8 @@
       <!-- Masthead Heading-->
       <!-- <h1 class="masthead-heading text-uppercase mb-0">Chris Achinga</h1> -->
       <h1>i am
-        <span class="txt-type masthead-heading text-uppercase mb-0" data-wait="3000" data-words='["a web developer", "A Software Developer", "Human"]'></span>
+        <span class="txt-type masthead-heading text-uppercase mb-0" data-wait="3000"
+          data-words='["a web developer", "A Software Developer", "Human"]'></span>
       </h1>
       <!-- Icon Divider-->
       <div class="divider-custom divider-light">
@@ -179,12 +181,16 @@
       <div class="row">
         <div class="col-lg-4 ml-auto">
           <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nulla explicabo iure iste in illo? Quibusdam necessitatibus enim aliquid explicabo nostrum, officia, quae ut quaerat rerum facere, dolore unde aspernatur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nulla explicabo iure iste in illo?
+            Quibusdam necessitatibus enim aliquid explicabo nostrum, officia, quae ut quaerat rerum facere, dolore unde
+            aspernatur?
           </p>
         </div>
         <div class="col-lg-4 mr-auto">
           <p class="lead">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum magnam quas error illum voluptas veritatis modi nesciunt officia, cumque, iste nulla corporis et enim commodi similique. Obcaecati ea delectus, quod eligendi similique quae cumque molestias!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum magnam quas error illum voluptas veritatis
+            modi nesciunt officia, cumque, iste nulla corporis et enim commodi similique. Obcaecati ea delectus, quod
+            eligendi similique quae cumque molestias!
           </p>
         </div>
       </div>
@@ -314,7 +320,8 @@
         Social Zone
       </h2>
       <div class="text-center mt-4">
-        <a class="btn btn-outline-primary btn-social mx-1" href="https://twitter.com/achinga_chris"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-primary btn-social mx-1" href="https://twitter.com/achinga_chris"><i
+            class="fab fa-twitter"></i></a>
         <a class="btn btn-outline-primary btn-social mx-1" href=""><i class="fab fa-facebook"></i></a>
         <a class="btn btn-outline-primary btn-social mx-1" href=""><i class="fab fa-linkedin"></i></a>
       </div>
@@ -328,7 +335,8 @@
               <h4 class="card-title">
                 <a href="#">Twitter <i class="fab fa-twitter"></i></a>
               </h4>
-              <a class="twitter-timeline" data-width="300" data-height="300" href="https://twitter.com/achinga_chris?ref_src=twsrc%5Etfw">Tweets by achinga_chris</a> 
+              <a class="twitter-timeline" data-width="300" data-height="300"
+                href="https://twitter.com/achinga_chris?ref_src=twsrc%5Etfw">Tweets by achinga_chris</a>
             </div>
           </div>
         </div>
@@ -339,7 +347,8 @@
               <h4 class="card-title">
                 <a href="#">Faacebook & LinkedIn</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
+                gravida pellentesque urna varius vitae.</p>
             </div>
           </div>
         </div>
@@ -350,15 +359,21 @@
               <h4 class="card-title">
                 <a href="#">WhatsApp Direct</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <p class="card-text"> <input class="mobileShow" type="text" name="message">
+
+                <button onclick="share()" class="mobileShow">
+
+                  Share to whatsapp
+
+                </button></p>
 
             </div>
           </div>
         </div>
       </div>
-          
-        </div>
-      </div>
+
+    </div>
+    </div>
     </div>
   </section>
   <!-- Footer-->
@@ -413,6 +428,39 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
+
+  <!-- share to whatsapp -->
+  <script type="text/javascript">
+    // Function to share on whatsapp 
+
+    function share() {
+
+
+
+      // Getting user input 
+
+      var message = $("input[name=message]").val();
+
+
+
+      // Opening URL 
+
+      window.open(
+
+        "whatsapp://send?text=" + message,
+
+
+
+        // This is what makes it  
+
+        // open in a new window. 
+
+        '_blank'
+
+      );
+
+    }
+  </script>
   <!-- AOS init -->
   <script>
     AOS.init();
