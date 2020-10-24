@@ -1,663 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Head -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris Achinga</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Great+Vibes&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("");
+        /*background-size: cover;*/
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-color: #000;
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .background {
+        height: 100vh;
+        background: #171717f2;
+      }
+      .container h1 {
+        padding: 0;
+        margin: 0;
+        color: #000;
+        text-shadow: -3px 1px 2px rgba(84, 84, 84, 0.5);
+        font-size: 60px;
+        color: #fff;
+        font-family: "Fredericka the Great", cursive;
+        font-family: "Great Vibes", cursive;
+        font-family: "VT323", monospace;
+        font-family: monospace;
+      }
+      .container p {
+        color: green;
+        font-size: 18px;
+        margin: 0;
+        line-height: 35px;
+      }
+      span:before {
+        content: "";
+        animation: animate infinite 8s;
+      }
+      @keyframes animate {
+        0% {
+          content: "W";
+        }
+        10% {
+          content: "Web";
+        }
+        20% {
+          content: "Website";
+        }
+        30% {
+          content: "Website Is";
+        }
+        40% {
+          content: "Website Is Und";
+        }
+        50% {
+          content: "Website Is Under";
+        }
+        60% {
+          content: "Website Is Under Upgra";
+        }
+        70% {
+          content: "Website Is Under Upgrade and";
+        }
+        80% {
+          content: "Website Is Under Upgrade and Main";
+        }
+        90% {
+          content: "Website Is Under Upgrade and Maintenance";
+        }
+        100% {
+          content: "Website Is Under Upgrade and Maintenance - Keep Visiting";
+        }
+      }
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="portfolio, Chris, Resume">
-    <meta name="author" content="Chris Achinga">
-    <title>BLM</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/chris.ico">
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+      .load {
+        background: #fff;
+        color: #000;
+        height: 5px;
+      }
 
-    <!-- google adscence -->
-    <script data-ad-client="ca-pub-9257433021714216" async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</head>
-<!-- End of Head -->
+      .icon {
+        width: 30px;
+        height: 30px;
+        background: blue;
+        margin: 5px;
+      }
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-theme-main-light text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Chris Achinga</a><button
-                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
-                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#skills">Skills</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#project">Projects</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#contact">Contact</a></li>
-                </ul>
-            </div>
+      .dribbble {
+        background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaWQ9IkxheWVyXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEyOCAxMjg7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQoJLnN0MXtmaWxsOm5vbmU7c3Ryb2tlOiM0NDRCNTQ7c3Ryb2tlLXdpZHRoOjY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KCS5zdDJ7ZmlsbDojNzZFQ0ZGO30KCS5zdDN7ZmlsbDojRTRFN0U3O30KCS5zdDR7ZmlsbDojRkY2OTdCO30KCS5zdDV7ZmlsbDojNjU5RUM5O30KCS5zdDZ7ZmlsbDojNDQ0QjU0O30KCS5zdDd7ZmlsbDojQTRGNEM0O30KCS5zdDh7ZmlsbDojMDZBMThDO30KCS5zdDl7ZmlsbDojOEZFNUI1O30KCS5zdDEwe29wYWNpdHk6MC41O2ZpbGw6IzA2QTE4Qzt9Cgkuc3QxMXtvcGFjaXR5OjAuNTt9Cgkuc3QxMntmaWxsOiNGRkRCQUI7fQoJLnN0MTN7ZmlsbDojRDE4NjY5O30KCS5zdDE0e2ZpbGw6I0ZDRjA5RDt9Cgkuc3QxNXtmaWxsOm5vbmU7c3Ryb2tlOiNGRkZGRkY7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQoJLnN0MTZ7ZmlsbDojRURFQ0VCO30KCS5zdDE3e2ZpbGw6IzRGQkJDNjt9Cgkuc3QxOHtkaXNwbGF5Om5vbmU7fQoJLnN0MTl7ZGlzcGxheTppbmxpbmU7ZmlsbDojNUVDOEQzO30KCS5zdDIwe2Rpc3BsYXk6aW5saW5lO30KCS5zdDIxe2ZpbGw6I0VENzRBNTt9Cgkuc3QyMntmaWxsOiNDMTI3NjI7fQo8L3N0eWxlPjxnPjxjaXJjbGUgY2xhc3M9InN0MjEiIGN4PSI2NCIgY3k9IjY0IiByPSI0NSIvPjwvZz48Zz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzQsNDIuMWMtMC43LDAtMS40LTAuMi0xLjktMC43Yy0xLjMtMS4xLTEuNS0yLjktMC40LTQuMkMzOS43LDI3LjUsNTEuNSwyMiw2NCwyMmMxLjcsMCwzLDEuMywzLDMgICBzLTEuMywzLTMsM2MtMTAuNywwLTIwLjgsNC44LTI3LjcsMTMuMUMzNS43LDQxLjgsMzQuOCw0Mi4xLDM0LDQyLjF6Ii8+PC9nPjxwYXRoIGNsYXNzPSJzdDIyIiBkPSJNMTA4LjcsNjUuNmwtNy41LTIuMWMtOC44LTIuNS0xNy45LTIuOC0yNi42LTFjLTEuMS0yLjYtMi4zLTUuMi0zLjYtNy44YzEwLjItNC45LDE5LjQtMTEuOCwyNy4xLTIwLjUgIGMxLjEtMS4yLTMuNC01LjItNC41LTRjLTcuMiw4LjItMTUuOCwxNC42LTI1LjMsMTkuMWMtMi44LTUuMi01LjgtMTAuMi05LjEtMTVjLTAuOS0xLjQtMi44LTEuNy00LjItMC44Yy0xLjQsMC45LTEuNywyLjgtMC44LDQuMiAgYzMuMSw0LjUsNS45LDkuMiw4LjUsMTRjLTkuOCwzLjgtMjAuNSw1LjYtMzEuNCw1LjFjLTEuNy0wLjEtMy4xLDEuMi0zLjEsMi45Yy0wLjEsMS43LDEuMiwzLjEsMi45LDMuMWMxLjIsMCwyLjQsMC4xLDMuNiwwLjEgIGMxMC43LDAsMjEuMS0yLDMwLjgtNS44YzEuMSwyLjMsMi4yLDQuNiwzLjIsN2MtMi44LDAuOS01LjYsMi04LjQsMy40QzQ3LjcsNzMuOSwzOCw4NC44LDMzLjEsOTguMWMtMC42LDEuNiw1LjIsMy4zLDUuNiwyLjEgIGM1LjYtMTUuMSwxNy45LTI2LDMyLjQtMzAuNWM0LjUsMTEuNCw3LjcsMjMuMiw5LjUsMzUuMmMwLjIsMS41LDYuMiwwLjcsNS45LTAuOWMtMS44LTEyLjItNS4xLTI0LjItOS42LTM1LjggIGM3LjMtMS40LDE1LjEtMS4xLDIyLjYsMWw3LjUsMi4xQzEwOC42LDcxLjgsMTEwLjMsNjYsMTA4LjcsNjUuNnoiLz48Zz48Y2lyY2xlIGNsYXNzPSJzdDAiIGN4PSIyNy4xIiBjeT0iNTEuMiIgcj0iMyIvPjwvZz48Zz48cGF0aCBjbGFzcz0ic3Q2IiBkPSJNNjQsMTEyYy0yNi41LDAtNDgtMjEuNS00OC00OHMyMS41LTQ4LDQ4LTQ4YzQuOSwwLDkuNywwLjcsMTQuMywyLjJjNy40LDIuMywxNC4yLDYuNCwxOS43LDExLjkgICBDMTA3LDM5LjEsMTEyLDUxLjIsMTEyLDY0QzExMiw5MC41LDkwLjUsMTEyLDY0LDExMnogTTY0LDIyYy0yMy4yLDAtNDIsMTguOC00Miw0MnMxOC44LDQyLDQyLDQyYzIzLjIsMCw0Mi0xOC44LDQyLTQyICAgYzAtMTEuMi00LjQtMjEuOC0xMi4zLTI5LjdjLTQuOC00LjgtMTAuOC04LjQtMTcuMi0xMC40QzcyLjUsMjIuNiw2OC4zLDIyLDY0LDIyeiIvPjwvZz48L3N2Zz4=");
+      }
+      .github {
+        background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaWQ9IkxheWVyXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEyOCAxMjg7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQoJLnN0MXtmaWxsOm5vbmU7c3Ryb2tlOiM0NDRCNTQ7c3Ryb2tlLXdpZHRoOjY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KCS5zdDJ7ZmlsbDojNzZFQ0ZGO30KCS5zdDN7ZmlsbDojRTRFN0U3O30KCS5zdDR7ZmlsbDojRkY2OTdCO30KCS5zdDV7ZmlsbDojNjU5RUM5O30KCS5zdDZ7ZmlsbDojNDQ0QjU0O30KCS5zdDd7ZmlsbDojQTRGNEM0O30KCS5zdDh7ZmlsbDojMDZBMThDO30KCS5zdDl7ZmlsbDojOEZFNUI1O30KCS5zdDEwe29wYWNpdHk6MC41O2ZpbGw6IzA2QTE4Qzt9Cgkuc3QxMXtvcGFjaXR5OjAuNTt9Cgkuc3QxMntmaWxsOiNGRkRCQUI7fQoJLnN0MTN7ZmlsbDojRDE4NjY5O30KCS5zdDE0e2ZpbGw6I0ZDRjA5RDt9Cgkuc3QxNXtmaWxsOm5vbmU7c3Ryb2tlOiNGRkZGRkY7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQoJLnN0MTZ7ZmlsbDojRURFQ0VCO30KCS5zdDE3e2ZpbGw6IzRGQkJDNjt9Cgkuc3QxOHtkaXNwbGF5Om5vbmU7fQoJLnN0MTl7ZGlzcGxheTppbmxpbmU7ZmlsbDojNUVDOEQzO30KCS5zdDIwe2Rpc3BsYXk6aW5saW5lO30KCS5zdDIxe2ZpbGw6I0VENzRBNTt9Cgkuc3QyMntmaWxsOiNDMTI3NjI7fQo8L3N0eWxlPjxnPjxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik0xMDQuMSw0Mi4yYy0wLjgtNC45LTIuMS03LjQtNS4xLTEwLjhjMC41LTMuMywwLjYtNi42LDAuMi05LjljLTAuMS0wLjgtMC4yLTEuNS0wLjMtMi4zICAgYy0wLjItMS4yLTAuNS0yLjQtMC44LTMuNkw5OCwxNWMwLTAuMi0wLjEtMC4zLTAuMi0wLjVjMCwwLTAuMS0wLjEtMC4xLTAuMWMtMC4xLTAuMS0wLjEtMC4yLTAuMi0wLjNjMC0wLjEtMC4xLTAuMS0wLjEtMC4xICAgYy0wLjEtMC4xLTAuMS0wLjItMC4yLTAuMmMwLDAtMC4xLTAuMS0wLjEtMC4xYy0wLjEtMC4xLTAuMi0wLjEtMC4zLTAuMmMwLDAtMC4xLTAuMS0wLjEtMC4xYy0wLjEtMC4xLTAuMy0wLjEtMC40LTAuMiAgIGMwLDAsMCwwLTAuMSwwYy0wLjItMC4xLTAuMy0wLjEtMC41LTAuMWMwLDAtMC4xLDAtMC4yLDBjLTAuMSwwLTAuMiwwLTAuMywwYzAsMCwwLDAtMC4xLDBjLTAuMiwwLTAuNCwwLTAuNywwLjFMOTQsMTMuMyAgIGMtMS4zLDAuMy0yLjUsMC43LTMuNywxLjJDODguNSwxNS4yLDg2LjcsMTYsODUsMTdjLTEuNywxLTMuMywyLjEtNC45LDMuM2MtMi41LTAuNy01LjEtMS4zLTcuOC0xLjZjLTIuNy0wLjQtNS41LTAuNi04LjQtMC42ICAgcy01LjcsMC4yLTguNCwwLjZjLTIuNywwLjQtNS4zLDAuOS03LjgsMS42QzQ2LjMsMTkuMSw0NC43LDE4LDQzLDE3Yy0xLjctMS0zLjUtMS44LTUuMy0yLjVjLTEuMi0wLjUtMi41LTAuOS0zLjctMS4ybC0wLjYtMC4yICAgQzMzLjEsMTMsMzIuOSwxMywzMi43LDEzYzAsMCwwLDAtMC4xLDBjLTAuMSwwLTAuMiwwLTAuMywwYzAsMC0wLjEsMC0wLjEsMGMtMC4yLDAtMC4zLDAuMS0wLjUsMC4xYzAsMCwwLDAsMCwwICAgYy0wLjEsMC4xLTAuMywwLjEtMC40LDAuMmMwLDAtMC4xLDAuMS0wLjEsMC4xYy0wLjEsMC4xLTAuMiwwLjEtMC4zLDAuMmMwLDAtMC4xLDAuMS0wLjEsMC4xYy0wLjEsMC4xLTAuMiwwLjEtMC4yLDAuMiAgIGMwLDAtMC4xLDAuMS0wLjEsMC4xYy0wLjEsMC4xLTAuMSwwLjItMC4yLDAuM2MwLDAtMC4xLDAuMS0wLjEsMC4xQzMwLjEsMTQuNywzMCwxNC45LDMwLDE1bC0wLjIsMC42Yy0wLjUsMS45LTAuOSwzLjktMS4xLDUuOCAgIGMtMC4xLDAuNy0wLjEsMS4zLTAuMiwycy0wLjEsMS4zLTAuMSwyYzAsMiwwLjIsNCwwLjUsNS45Yy0xLjksMi4xLTMuMSwzLjktMy45LDYuMWMtMC41LDEuMy0wLjksMi44LTEuMiw0LjcgICBjLTAuMywxLjUtMC40LDMuMS0wLjQsNC42djBsMCwwYzAsMTAsNS4yLDE5LjEsMTMuNSwyNC4yYzEuMiwwLjcsMi40LDEuNCwzLjgsMS45QzQ3LjIsNzUuNiw1NS4xLDc3LDY0LDc3czE2LjgtMS40LDIzLjItNC4xICAgYzEuMy0wLjUsMi42LTEuMiwzLjgtMS45YzguMy01LjEsMTMuNS0xNC4yLDEzLjUtMjQuMkMxMDQuNSw0NS4zLDEwNC40LDQzLjcsMTA0LjEsNDIuMnoiLz48cGF0aCBjbGFzcz0ic3Q2IiBkPSJNODcsMTA5Yy0xLjEsMC0yLTAuOS0yLTJsMC03YzAtMTEuNi05LjQtMjEtMjEtMjFjLTguNCwwLTE1LjYsNC45LTE4LjksMTJoLTUuMmMtMi42LDAtNS0xLjQtNi4zLTMuNSAgIGwtMS45LTMuMmMtMi0zLjItNC44LTUuOC04LjItNy4zbC0zLjEtMS41Yy0xLjUtMC43LTMuMy0wLjEtNCwxLjVjLTAuNywxLjUtMC4xLDMuMywxLjUsNGwzLjEsMS41YzIuMywxLjEsNC4zLDIuOCw1LjYsNWwxLjksMy4yICAgYzIuNCw0LDYuOCw2LjQsMTEuNCw2LjRoMy40Yy0wLjEsMS0wLjIsMi0wLjIsM2wwLDdjMCwxLjEtMC45LDItMiwyYy0xLjcsMC0zLDEuMy0zLDNzMS4zLDMsMywzYzQuNCwwLDgtMy42LDgtOGwwLTcgICBjMC00LjksMi40LTkuMiw2LTEydjE2LjljMCwzLjgtMS41LDcuMy00LjEsMTBjLTEuMiwxLjItMS4yLDMuMSwwLDQuMmMwLjYsMC42LDEuNCwwLjksMi4xLDAuOXMxLjUtMC4zLDIuMS0wLjkgICBjMy44LTMuOCw1LjktOC44LDUuOS0xNC4yVjg1LjNjMS0wLjIsMi0wLjMsMy0wLjNzMiwwLjEsMywwLjN2MTkuNmMwLDUuNCwyLjEsMTAuNCw1LjksMTQuMmMwLjYsMC42LDEuNCwwLjksMi4xLDAuOSAgIHMxLjUtMC4zLDIuMS0wLjljMS4yLTEuMiwxLjItMy4xLDAtNC4yYy0yLjctMi43LTQuMS02LjItNC4xLTEwVjg4YzMuNiwyLjcsNiw3LjEsNiwxMmwwLDdjMCw0LjQsMy42LDgsOCw4YzEuNywwLDMtMS4zLDMtMyAgIFM4OC43LDEwOSw4NywxMDl6Ii8+PGc+PHBhdGggY2xhc3M9InN0MCIgZD0iTTk0LDU0LjRjMC0wLjQsMC0wLjgsMC0xLjF2MGMwLTktNy4zLTE2LjMtMTYuMy0xNi4zSDUwLjNjLTksMC0xNi4zLDcuMy0xNi4zLDE2LjN2MGMwLDAuNCwwLDAuOCwwLDEuMSAgICBjMC40LDYuOSw1LjUsMTIuNSwxMi4yLDE0LjRDNTEuNSw3MC4yLDU3LjUsNzEsNjQsNzFzMTIuNS0wLjgsMTcuOC0yLjJDODguNCw2Ni45LDkzLjUsNjEuMyw5NCw1NC40eiIvPjwvZz48Zz48Y2lyY2xlIGNsYXNzPSJzdDYiIGN4PSI0NyIgY3k9IjU1IiByPSI0LjUiLz48L2c+PGc+PGNpcmNsZSBjbGFzcz0ic3Q2IiBjeD0iODEiIGN5PSI1NSIgcj0iNC41Ii8+PC9nPjwvZz48L3N2Zz4=");
+      }
+      .twitter {
+        background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaWQ9IkxheWVyXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEyOCAxMjg7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQoJLnN0MXtmaWxsOm5vbmU7c3Ryb2tlOiM0NDRCNTQ7c3Ryb2tlLXdpZHRoOjY7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KCS5zdDJ7ZmlsbDojNzZFQ0ZGO30KCS5zdDN7ZmlsbDojRTRFN0U3O30KCS5zdDR7ZmlsbDojRkY2OTdCO30KCS5zdDV7ZmlsbDojNjU5RUM5O30KCS5zdDZ7ZmlsbDojNDQ0QjU0O30KCS5zdDd7ZmlsbDojQTRGNEM0O30KCS5zdDh7ZmlsbDojMDZBMThDO30KCS5zdDl7ZmlsbDojOEZFNUI1O30KCS5zdDEwe29wYWNpdHk6MC41O2ZpbGw6IzA2QTE4Qzt9Cgkuc3QxMXtvcGFjaXR5OjAuNTt9Cgkuc3QxMntmaWxsOiNGRkRCQUI7fQoJLnN0MTN7ZmlsbDojRDE4NjY5O30KCS5zdDE0e2ZpbGw6I0ZDRjA5RDt9Cgkuc3QxNXtmaWxsOm5vbmU7c3Ryb2tlOiNGRkZGRkY7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQoJLnN0MTZ7ZmlsbDojRURFQ0VCO30KCS5zdDE3e2ZpbGw6IzRGQkJDNjt9Cjwvc3R5bGU+PGc+PGc+PHBhdGggY2xhc3M9InN0MiIgZD0iTTEwMC4yLDQyLjVjLTAuNCwwLjQtMC43LDEtMC42LDEuNmMwLjEsMS45LDIuNiw0Ny40LTQ1LjcsNTguOGMtMC4yLDAtMTkuNCw0LTM2LTQuMmM3LTAuMiwxNy4xLTIsMjQuMS05LjkgICAgYzAuNS0wLjYsMC43LTEuNCwwLjMtMi4yYy0wLjMtMC43LTEtMS4yLTEuOC0xLjJjMCwwLDAsMCwwLDBjLTAuMSwwLjEtMTAuNiwwLTE1LjUtMTBjMS45LDAuMSw0LjMsMCw2LjMtMC45ICAgIGMwLjgtMC40LDEuMy0xLjIsMS4yLTJjLTAuMS0wLjktMC43LTEuNi0xLjYtMS43Yy0wLjUtMC4xLTEyLjMtMi43LTEzLjktMTUuNWMxLjgsMC44LDQuMSwxLjQsNi4zLDEuMWMwLjgtMC4xLDEuNC0wLjcsMS42LTEuNCAgICBjMC4yLTAuOCwwLTEuNi0wLjYtMi4xYy0wLjUtMC40LTExLjUtMTAuMi02LjMtMjIuOWM1LjcsNiwyMi41LDIxLjQsNDIuOSwyMC4zYzAuNiwwLDEuMS0wLjMsMS41LTAuOGMwLjQtMC41LDAuNS0xLjEsMC4zLTEuNyAgICBjLTAuNC0xLjUtMC42LTMuMS0wLjYtNC43YzAtMTAuNCw4LjMtMTguOSwxOC42LTE4LjljNSwwLDkuNywyLDEzLjIsNS42YzAuNCwwLjQsMC45LDAuNiwxLjQsMC42YzIuMSwwLDUuNi0wLjIsOS42LTEuOCAgICBjLTEuMSwxLjQtMi44LDMuMS01LjMsNS4xYy0wLjcsMC41LTEsMS41LTAuNiwyLjNjMC4zLDAuOCwxLjIsMS4zLDIsMS4zYzAuNSwwLDIuOS0wLjIsNS42LTAuOEMxMDUsMzcuOSwxMDMsMzkuOSwxMDAuMiw0Mi41eiIvPjwvZz48Zz48Zz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzIuMSw2NS4xYzAuOC0wLjEsMS40LTAuNywxLjYtMS40YzAuMi0wLjgsMC0xLjYtMC42LTIuMWMtMC41LTAuNC0xMS41LTEwLjItNi4zLTIyLjkgICAgIGM1LjcsNiwyMi41LDIxLjQsNDIuOSwyMC4zYzAuNiwwLDEuMS0wLjMsMS41LTAuOGMwLjQtMC41LDAuNS0xLjEsMC4zLTEuN2MtMC40LTEuNS0wLjYtMy4xLTAuNi00LjdjMC0xMC40LDguMy0xOC45LDE4LjYtMTguOSAgICAgYzMuMywwLDE0LjItMywxNS4zLTQuNGMtNCwxLjYtNy41LDEuOC05LjYsMS44Yy0wLjUsMC0xLTAuMi0xLjQtMC42Yy0zLjUtMy42LTguMi01LjYtMTMuMi01LjZDNzAuMywyNC4xLDYyLDMyLjUsNjIsNDIuOSAgICAgYzAsMS42LDAuMiwzLjIsMC42LDQuN2MwLjEsMC42LDAsMS4yLTAuMywxLjdjLTAuNCwwLjUtMC45LDAuOC0xLjUsMC44Yy0yMC40LDEuMi0zNy4yLTE0LjMtNDIuOS0yMC4zICAgICBjLTUuMiwxMi42LDUuOCwyMi40LDYuMywyMi45YzAuNiwwLjUsMC44LDEuMywwLjYsMi4xYy0wLjIsMC44LTAuOSwxLjMtMS42LDEuNGMtMi4zLDAuMy00LjUtMC4zLTYuMy0xLjEgICAgIGMxLjEsOC41LDYuNiwxMi41LDEwLjQsMTQuM2MtMC43LTEuNi0xLjItMy4zLTEuNS01LjRDMjcuNSw2NC44LDI5LjgsNjUuNSwzMi4xLDY1LjF6Ii8+PC9nPjxnPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MC4xLDgzLjRjMC44LTAuNCwxLjMtMS4yLDEuMi0yYy0wLjEtMC45LTAuNy0xLjYtMS42LTEuN2MtMC4zLTAuMS01LTEuMS04LjgtNC45Yy0xLjgsMC43LTQsMC44LTUuOSwwLjcgICAgIGMyLjUsNS4xLDYuNSw3LjcsOS44LDguOUMzNi41LDg0LjMsMzguNSw4NC4xLDQwLjEsODMuNHoiLz48L2c+PGc+PHBhdGggY2xhc3M9InN0MCIgZD0iTTUwLjgsOTcuN2MwLjUtMC42LDAuNy0xLjQsMC4zLTIuMmMtMC4zLTAuNy0xLTEuMi0xLjgtMS4yYzAsMCwwLDAsMCwwYy0wLjEsMC01LDAtOS43LTMuMiAgICAgYy02LjgsNS45LTE1LjUsNy40LTIxLjgsNy42YzguNSw0LjIsMTcuOCw1LjIsMjQuNyw1LjJDNDUuNSwxMDIuNCw0OC40LDEwMC40LDUwLjgsOTcuN3oiLz48L2c+PC9nPjxnPjxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik0yNC4yLDU1LjhjLTAuNywwLTEuNC0wLjItMi0wLjdjLTAuNS0wLjUtMTMuMS0xMS43LTcuMS0yNi4zYzAuNC0wLjksMS4yLTEuNiwyLjItMS44YzEtMC4yLDIsMC4xLDIuNywwLjkgICAgYzE2LjcsMTcuNSwzMi4zLDE5LjUsMzkuMywxOS40Yy0wLjMtMS40LTAuNC0yLjgtMC40LTQuMmMwLTEyLDkuNy0yMS45LDIxLjYtMjEuOWM1LjcsMCwxMSwyLjIsMTUsNi4yYzYuNy0wLjQsMTAuNy0zLjcsMTAuOC0zLjcgICAgYzEuMy0xLjEsMy4yLTAuOSw0LjIsMC4zYzEuMSwxLjMsMC45LDMuMi0wLjMsNC4yYy0wLjIsMC4yLTUuOCw0LjktMTUsNS4yYy0wLjEsMC0wLjEsMC0wLjIsMGMtMS4zLDAtMi42LTAuNi0zLjUtMS41ICAgIGMtMi45LTMtNi45LTQuNy0xMS4xLTQuN0M3MiwyNy4xLDY1LDM0LjIsNjUsNDIuOWMwLDEuMywwLjIsMi43LDAuNSw0YzAuNCwxLjUsMC4xLDMtMC44LDQuMmMtMC45LDEuMi0yLjMsMi0zLjgsMiAgICBjLTE4LDEtMzMuMi05LjktNDEuNC0xNy40Yy0wLjYsOC40LDYuMywxNC41LDYuNiwxNC44YzEuMiwxLjEsMS40LDMsMC4zLDQuMkMyNS45LDU1LjQsMjUsNTUuOCwyNC4yLDU1Ljh6IE05NS45LDI3LjYgICAgQzk1LjksMjcuNiw5NS45LDI3LjYsOTUuOSwyNy42Qzk1LjksMjcuNiw5NS45LDI3LjYsOTUuOSwyNy42eiIvPjwvZz48Zz48cGF0aCBjbGFzcz0ic3Q2IiBkPSJNOTkuNiw0Ny4xYy0xLDAtMi0wLjUtMi42LTEuNWMtMC44LTEuNC0wLjMtMy4zLDEuMS00LjFjNS40LTMuMSwxMS0xMC4yLDExLjEtMTAuM2MxLTEuMywyLjktMS41LDQuMi0wLjUgICAgYzEuMywxLDEuNSwyLjksMC41LDQuMmMtMC4zLDAuMy02LjQsOC4xLTEyLjgsMTEuOEMxMDAuNiw0Ni45LDEwMC4xLDQ3LjEsOTkuNiw0Ny4xeiIvPjwvZz48Zz48cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMzAuOCw3My43Yy0wLjIsMC0wLjQsMC0wLjYtMC4xYy0wLjYtMC4xLTE0LjQtMy4yLTE2LjMtMTguMWMtMC4yLTEuNiwxLTMuMSwyLjYtMy40YzEuNi0wLjIsMy4xLDEsMy40LDIuNiAgICBjMS40LDEwLjcsMTEuMiwxMi45LDExLjYsMTNjMS42LDAuMywyLjcsMS45LDIuMywzLjZDMzMuNCw3Mi44LDMyLjIsNzMuNywzMC44LDczLjd6Ii8+PC9nPjxnPjxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik00MC41LDg4LjVMNDAuNSw4OC41Yy0xLjcsMC4xLTMuOC0wLjQtNS4xLTAuOGMtNC4xLTEuMi05LjgtNC0xMy4xLTExYy0wLjctMS41LTAuMS0zLjMsMS40LTQgICAgYzEuNS0wLjcsMy4zLTAuMSw0LDEuNGMzLjgsNy45LDExLjksOC4zLDEyLjYsOC40YzEuNy0wLjEsMy4yLDEuMywzLjIsM0M0My41LDg3LjEsNDIuMSw4OC41LDQwLjUsODguNXogTTM4LjgsODIuOSAgICBDMzguOCw4Mi45LDM4LjgsODIuOSwzOC44LDgyLjlDMzguOCw4Mi45LDM4LjgsODIuOSwzOC44LDgyLjl6IE0zOC44LDgyLjlDMzguOCw4Mi45LDM4LjgsODIuOSwzOC44LDgyLjkgICAgQzM4LjgsODIuOSwzOC44LDgyLjksMzguOCw4Mi45eiBNMzguOCw4Mi45QzM4LjgsODIuOSwzOC44LDgyLjksMzguOCw4Mi45QzM4LjgsODIuOSwzOC44LDgyLjksMzguOCw4Mi45eiBNMzguOCw4Mi45ICAgIEMzOC44LDgyLjksMzguOCw4Mi45LDM4LjgsODIuOUMzOC44LDgyLjksMzguOCw4Mi45LDM4LjgsODIuOXoiLz48L2c+PGc+PHBhdGggY2xhc3M9InN0NiIgZD0iTTQwLjYsOTVjLTAuMiwwLTAuNCwwLTAuNi0wLjFjLTAuMiwwLTAuNC0wLjEtMC42LTAuMmMtMC4yLTAuMS0wLjQtMC4yLTAuNS0wLjNjLTAuMi0wLjEtMC4zLTAuMi0wLjUtMC40ICAgIGMtMC4xLTAuMS0wLjMtMC4zLTAuNC0wLjVjLTAuMS0wLjItMC4yLTAuMy0wLjMtMC41Yy0wLjEtMC4yLTAuMS0wLjQtMC4yLTAuNmMwLTAuMi0wLjEtMC40LTAuMS0wLjZjMC0wLjIsMC0wLjQsMC4xLTAuNiAgICBjMC0wLjIsMC4xLTAuNCwwLjItMC42YzAuMS0wLjIsMC4yLTAuNCwwLjMtMC41YzAuMS0wLjIsMC4yLTAuMywwLjQtMC41YzAuMS0wLjEsMC4zLTAuMywwLjUtMC40YzAuMi0wLjEsMC4zLTAuMiwwLjUtMC4zICAgIGMwLjItMC4xLDAuNC0wLjEsMC42LTAuMmMwLjQtMC4xLDAuOC0wLjEsMS4yLDBjMC4yLDAsMC40LDAuMSwwLjYsMC4yYzAuMiwwLjEsMC40LDAuMiwwLjUsMC4zYzAuMiwwLjEsMC4zLDAuMiwwLjUsMC40ICAgIHMwLjMsMC4zLDAuNCwwLjVzMC4yLDAuMywwLjMsMC41YzAuMSwwLjIsMC4xLDAuNCwwLjIsMC42YzAsMC4yLDAuMSwwLjQsMC4xLDAuNmMwLDAuMiwwLDAuNC0wLjEsMC42YzAsMC4yLTAuMSwwLjQtMC4yLDAuNiAgICBjLTAuMSwwLjItMC4yLDAuNC0wLjMsMC41cy0wLjIsMC4zLTAuNCwwLjVjLTAuMSwwLjEtMC4zLDAuMy0wLjUsMC40Yy0wLjIsMC4xLTAuMywwLjItMC41LDAuM2MtMC4yLDAuMS0wLjQsMC4xLTAuNiwwLjIgICAgQzQxLDk0LjksNDAuOCw5NSw0MC42LDk1eiIvPjwvZz48Zz48cGF0aCBjbGFzcz0ic3Q2IiBkPSJNMTcuOSwxMDEuN2MtMS42LDAtMy0xLjMtMy0yLjljMC0xLjcsMS4zLTMsMi45LTMuMWM1LjMtMC4xLDEwLjEtMS4yLDE0LjEtMy4xYzEuNS0wLjcsMy4zLTAuMSw0LDEuNCAgICBjMC43LDEuNSwwLjEsMy4zLTEuNCw0QzI5LjcsMTAwLjMsMjQuMSwxMDEuNSwxNy45LDEwMS43QzE3LjksMTAxLjcsMTcuOSwxMDEuNywxNy45LDEwMS43eiIvPjwvZz48Zz48cGF0aCBjbGFzcz0ic3Q2IiBkPSJNNDIuMywxMDYuOWMtMywwLTYuNC0wLjItMTAtMC43Yy0xLjYtMC4yLTIuOC0xLjgtMi41LTMuNGMwLjItMS42LDEuOC0yLjgsMy40LTIuNWMxMC44LDEuNiwyMC0wLjMsMjAuMS0wLjMgICAgQzk5LDg5LjEsOTYuNyw0Ni4xLDk2LjYsNDQuM2MtMC4xLTEuNywxLjEtMy4xLDIuOC0zLjJjMS43LTAuMSwzLjEsMS4xLDMuMiwyLjhjMC4xLDIsMi43LDQ5LjktNDgsNjEuOSAgICBDNTQuMiwxMDUuOSw0OS4zLDEwNi45LDQyLjMsMTA2Ljl6Ii8+PC9nPjwvZz48L3N2Zz4=");
+      }
+
+      .medias {
+        display: flex;
+        width: 140px;
+        background: none;
+        border-radius: 16px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0px 0px 2px 0px #280648d6;
+        position: absolute;
+        top: 92%;
+      }
+      .icons-container {
+        display: inline-flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <h1><span></span></h1>
+        <div class="load"></div>
+      </div>
+      <div class="medias">
+        <div class="icons-container">
+          <a href="https://github.com/gilmara-barros" target="_blank">
+            <div class="icon github"></div>
+          </a>
+          <a href="https://dribbble.com/Mara-Barros" target="_blank">
+            <div class="icon dribbble"></div>
+          </a>
+          <a href="https://twitter.com/Mara_barrosc" target="_blank">
+            <div class="icon twitter"></div>
+          </a>
+          <!--<div class="icon page"></div> -->
         </div>
-    </nav>
-    <!-- End of Nav -->
-
-    <!-- Masthead-->
-    <header class="masthead bg-theme-main text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5 rounded-circle" src="assets/img/chris.png"
-                alt="" /><!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-0">chris achinga</h1>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                    href="https://www.linkedin.com/in/chris-achinga-001/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                    href="https://github.com/ChrisAchinga"><i class="fab fa-github"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                    href="https://github.com/ChrisAchinga/achinga.chris/tree/dev"><i class="fas fa-code-branch"></i></a>
-            </div>
-            <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Software Engineer - Student - Computers & Internet</p>
-        </div>
-    </header>
-    <!-- End of Head -->
-
-
-    <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="skills">
-        <div class="container">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skills & Tools</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Portfolio Grid Items-->
-            <div class="row">
-                <!-- Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/programming-3173456_1280.png" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/python-djngo.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/nodejs.png" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 4-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/git_gh.png" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 5-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/py_env.png" alt="" />
-                    </div>
-                </div>
-                <!-- Portfolio Item 6-->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/competence.jpg" alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Portfolio Section -->
-
-    <!-- About Section-->
-    <section class="page-section bg-about text-white mb-0" id="about">
-        <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- About Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead">
-                        <span>Who I Am:</span> <br>
-                        A young man with a goal of becoming a senior software engineer, building solutions that help
-                        humanity around the world, and solutions that make businesses and organizations operate
-                        smoothly.
-                    </p>
-                </div>
-                <div class="col-lg-4 mr-auto">
-                    <p class="lead">
-                        <span>What Can I do?</span> <br>
-                        I can comfortably work on frontend jobs using web development tools. In addition to that, I use
-                        Django and Node JS to create and databases to web applications I create or work on.
-                    </p>
-                </div>
-            </div>
-            <!-- About Section Button-->
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" target='_blank'
-                    href="https://drive.google.com/file/d/1DFV9Hy4rEzAApWc_ZGqVEessLICEteg7/view?usp=sharing"><i
-                        class="fas fa-user-circle"></i> My Resume</a>
-            </div>
-        </div>
-    </section>
-    <!-- End of About -->
-
-
-    <!-- project section -->
-    <section class="page-section" id="project">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">my projects</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-tasks"></i></i></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- projects -->
-            <div class="card-deck mt-4">
-                <!-- covid 19 -->
-                <div class="card">
-                    <img src="assets/img/projects/codid.png" class="card-img-top" alt="covid image">
-                    <div class="card-body">
-                        <h5 class="card-title">Covid19 Statistics</h5>
-                        <!-- Icon Divider-->
-                        <div class="divider-custom">
-                            <div class="divider-custom-line"></div>
-                            <div class="divider-custom-icon"><i class="fas fa-tasks"></i></i></i></div>
-                            <div class="divider-custom-line"></div>
-                        </div>
-                        <p class="card-text">
-                            This project fetches data from coronavirusmonitor API. It shows global statistics and per
-                            country statistics in a tabular form. It shows: Total number of people tested positive for
-                            corona virus, total deaths, total recoveries and number of people in critical condition.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://codid19.netlify.com/" data-toggle="tooltip" data-placement="bottom"
-                            title="live preview project"><i class="fas fa-binoculars"></i></i> Preview</a> |
-                        <a href="https://github.com/ChrisAchinga/covid-19" data-toggle="tooltip" data-placement="bottom"
-                            title="Source code on GitHub"><i class="fab fa-github-square"></i> Source Code</a>
-                    </div>
-                </div>
-                <!-- my portfolio -->
-                <div class="card">
-                    <img src="assets/img/projects/portfolio.png" class="card-img-top" alt="portfolio image">
-                    <div class="card-body">
-                        <h5 class="card-title">My Portfolio</h5>
-                        <!-- Icon Divider-->
-                        <div class="divider-custom">
-                            <div class="divider-custom-line"></div>
-                            <div class="divider-custom-icon"><i class="fas fa-tasks"></i></i></i></div>
-                            <div class="divider-custom-line"></div>
-                        </div>
-                        <p class="card-text">
-                            My Online portfolio, I summarize my skills and profeciency. Used basic html, css and
-                            javascript. In fact, you are staring at in now
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://achinga.netlify.app/" data-toggle="tooltip" data-placement="bottom"
-                            title="live preview project"><i class="fas fa-binoculars"></i></i> Preview</a> |
-                        <a href="https://github.com/ChrisAchinga/achinga.chris" data-toggle="tooltip"
-                            data-placement="bottom" title="Source code on GitHub"><i class="fab fa-github-square"></i>
-                            Source Code</a>
-                    </div>
-                </div>
-                <!-- react template -->
-                <div class="card">
-                    <img src="assets/img/projects/reaact.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">React Portfolio Template</h5>
-                        <!-- Icon Divider-->
-                        <div class="divider-custom">
-                            <div class="divider-custom-line"></div>
-                            <div class="divider-custom-icon"><i class="fas fa-tasks"></i></i></i></div>
-                            <div class="divider-custom-line"></div>
-                        </div>
-                        <p class="card-text">This is a template I use to learn React and try out new features on React.
-                            Hopefully will transform this website to be a react site</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/ChrisAchinga/react-portfolio-template" data-toggle="tooltip"
-                            data-placement="bottom" title="Site still on development mode"><i
-                                class="fas fa-binoculars"></i></i> Preview</a> |
-                        <a href="https://github.com/ChrisAchinga/react-portfolio-template" data-toggle="tooltip"
-                            data-placement="bottom" title="Source code on GitHub"><i class="fab fa-github-square"></i>
-                            Source Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-deck mt-4">
-                <!-- country code search -->
-                <div class="card">
-                    <img src="assets/img/projects/country.png" class="card-img-top" alt="Country Code">
-                    <div class="card-body">
-                        <h5 class="card-title">Country Search</h5>
-                        <!-- Icon Divider-->
-                        <div class="divider-custom">
-                            <div class="divider-custom-line"></div>
-                            <div class="divider-custom-icon"><i class="fas fa-tasks"></i></i></i></div>
-                            <div class="divider-custom-line"></div>
-                        </div>
-                        <p class="card-text">
-                            Using fetch api and Async JS to enable a user searchfor a country and get its abreviation
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://countrycode.netlify.app/" data-toggle="tooltip" data-placement="bottom"
-                            title="Site still on development mode"><i class="fas fa-binoculars"></i></i> Preview</a> |
-                        <a href="https://github.com/Chryler/Countries" data-toggle="tooltip" data-placement="bottom"
-                            title="Source code on GitHub"><i class="fab fa-github-square"></i> Source Code</a>
-                    </div>
-                </div>
-                <!-- chryeler -->
-                <div class="card">
-                    <img src="assets/img/projects/chryler.png" class="card-img-top" alt="chryler">
-                    <div class="card-body">
-                        <h5 class="card-title">Chryler</h5>
-                        <!-- Icon Divider-->
-                        <div class="divider-custom">
-                            <div class="divider-custom-line"></div>
-                            <div class="divider-custom-icon"><i class="fas fa-tasks"></i></i></i></div>
-                            <div class="divider-custom-line"></div>
-                        </div>
-                        <p class="card-text">
-                            My small "organization". I have mini projects and code snippets I use and create for
-                            learning and practice purposes
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/Chryler" data-toggle="tooltip" data-placement="bottom"
-                            title="Site still on development mode"><i class="fas fa-binoculars"></i></i> Preview</a> |
-                        <a href="https://github.com/Chryler" data-toggle="tooltip" data-placement="bottom"
-                            title="Source code on GitHub"><i class="fab fa-github-square"></i> Source Code</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/img/projects/me.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">GitHub</h5>
-                        <!-- Icon Divider-->
-                        <div class="divider-custom">
-                            <div class="divider-custom-line"></div>
-                            <div class="divider-custom-icon"><i class="fas fa-tasks"></i></i></i></div>
-                            <div class="divider-custom-line"></div>
-                        </div>
-                        <p class="card-text">My GitHub repositories</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="https://github.com/ChrisAchinga?tab=repositories" data-toggle="tooltip"
-                            data-placement="bottom" title="Site still on development mode"><i
-                                class="fas fa-binoculars"></i></i> Preview</a> |
-                        <a href="https://github.com/ChrisAchinga?tab=repositories" data-toggle="tooltip"
-                            data-placement="bottom" title="Source code on GitHub"><i class="fab fa-github-square"></i>
-                            Source Code</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- End of Project section -->
-
-
-    <!-- Contact Section-->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">My Contacts</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Contact Section Form-->
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="card">
-                        <div class="card-body">
-                            <strong>Email</strong>: <a
-                                href="mailto:achinga.chris@gmail.com">achinga.chris@gmail.com</a><br>
-                            <strong>Phone</strong>: +254 740 428522<br>
-                            <strong>Whatsapp</strong>: +254 785 565330<br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of contact -->
-
-
-    <!-- Footer-->
-    <footer class="footer text-center bg-theme-main-light">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p class="lead mb-0">Nairobi<br />Kenya, AFRICA</p>
-                </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Social Links</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                        href="https://web.facebook.com/chris.achinga/"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                        href="https://twitter.com/achinga_chris"><i class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                        href="https://www.linkedin.com/in/chris-achinga-001/"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" target="_blank"
-                        href="https://github.com/ChrisAchinga"><i class="fab fa-github"></i></a>
-                </div>
-                <!-- Footer About Text-->
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">I am Human</h4>
-                    <p class="lead mb-0">
-                        I believe in honesty, integrity and humanity. That makes me Human.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Copyright Section-->
-    <section class="copyright py-4 text-center text-white bg-theme-main">
-        <div class="container"><small>Copyright © Chris Achinga 2020</small></div>
-    </section>
-    <!-- End of footer -->
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-    <div class="scroll-to-top d-lg-none position-fixed">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
-                class="fa fa-chevron-up"></i></a>
+      </div>
     </div>
-
-    <!-- 
-            MODAL CONTENTS ------///////////----------
-         -->
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Web Development &
-                                    Design</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <p class="mb-5">
-                                    I can comfortably use HTML and vanilla CSS and JavaScript to create static and
-                                    dynamic web designs that suits a client's need
-
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Python & Python
-                                    Django</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <p class="mb-5">
-                                    Middle Level programmer in Python Language <br>
-                                    I use Python Django framework to design and create database models on the server
-                                    side of the web
-
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal3Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Node JS</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <p class="mb-5">
-                                    I am a fullstack JavaScript Engineer. I use Node runtime to create backend
-                                    applications
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 4-->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal4Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Git and GitHub +
-                                    DevOpps</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <p class="mb-5">
-                                    Can comfortably connect my remote work folders to github repositories using git.
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 5-->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal5Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Python Environment
-                                    + Docker</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <p class="mb-5">
-                                    Creating a simulated environment for my development and projects using python
-                                    environments and Docker.
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
-        aria-labelledby="portfolioModal6Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Social Skills and
-                                    Competence</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <p class="mb-5">
-                                    I have a great social interacting background. A great team player with a lot of
-                                    competence
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal"><i
-                                        class="fas fa-times fa-fw"></i>Close Window</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 
-            END OF MODAL CONTENTS ------///////////----------
-            -->
-
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-</body>
-
+  </body>
 </html>

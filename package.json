@@ -1,30 +1,20 @@
 {
-  "name": "achinga.chris",
-  "version": "1.0.1",
-  "description": "personal website",
+  "name": "chris.dev",
+  "version": "1.0.0",
+  "description": "My Portfolio Website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChrisAchinga/achinga.chris.git"
+    "url": "git+https://github.com/ChrisAchinga/chris.dev.git"
   },
-  "keywords": [
-    "software",
-    "developer",
-    "online",
-    "resume",
-    "technical",
-    "issue",
-    "javascript",
-    "python",
-    "react"
-  ],
-  "author": "Chris Achinga",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ChrisAchinga/achinga.chris/issues"
+    "url": "https://github.com/ChrisAchinga/chris.dev/issues"
   },
-  "homepage": "https://github.com/ChrisAchinga/achinga.chris#readme"
+  "homepage": "https://github.com/ChrisAchinga/chris.dev#readme"
 }
