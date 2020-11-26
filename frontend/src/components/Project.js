@@ -1,19 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
 
 const Project = ({ project }) => {
   return (
     <Card className='my-3 p-3 rounded'>
-      <a href={`/project/${project.route}`}>
+      <Link to={`/project/${project.route}`}>
         <Card.Img src={project.image} alt='image not added' />
-      </a>
+      </Link>
 
       <Card.Body>
-        <a href={`/project/${project.route}`}>
+        <Link to={`/project/${project.route}`}>
           <Card.Title>
             <strong>{project.name}</strong>
           </Card.Title>
-        </a>
+        </Link>
       </Card.Body>
       <Card.Text>
         <p>{project.briefDescription}</p>
