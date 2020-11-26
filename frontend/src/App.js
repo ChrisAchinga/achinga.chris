@@ -4,6 +4,8 @@ import { Container } from 'react-bootstrap'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ProjectScreen from './screens/ProjectScreen'
+import ArticleScreen from './screens/ArticleScreen'
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <main className="py-3">
         <Container>
           <h1>Chris Achinga</h1>
+          <ProjectScreen />
+          <ArticleScreen />
         </Container>
       </main>
       <Footer />
