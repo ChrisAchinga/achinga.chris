@@ -1,9 +1,14 @@
 import './App.css'
+import HomePage from './pages/HomePage'
+import NavigationBar from './components/NavigationBar'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <>
-      <h2>React Portfolio/Resume</h2>
+      <NavigationBar />
+      <HomePage />
+      <Footer />
     </>
   )
 }
