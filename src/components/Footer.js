@@ -1,7 +1,13 @@
+import { Container, Row, Col } from 'react-bootstrap'
+
 const Footer = () => {
   return (
     <>
-      <h2>Footer</h2>
+      <Container>
+        <Row>
+          <Col className='text-center py-3'>Copyright &copy: 2020 Chris Achinga</Col>
+        </Row>
+      </Container>
     </>
   )
 }

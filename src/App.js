@@ -1,3 +1,5 @@
+import { Container } from 'react-bootstrap'
+
 import './App.css'
 import HomePage from './pages/HomePage'
 import NavigationBar from './components/NavigationBar'
@@ -7,7 +9,12 @@ const App = () => {
   return (
     <>
       <NavigationBar />
-      <HomePage />
+
+      <main>
+        <Container>
+          <HomePage />
+        </Container>
+      </main>
       <Footer />
     </>
   )
