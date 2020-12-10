@@ -1,7 +1,6 @@
 {
   "name": "chris.dev",
   "version": "0.1.0",
-  "homepage": "http://www.chrisachinga.me/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
