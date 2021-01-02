@@ -31,7 +31,7 @@ const About = () => {
               <i className='fab fa-facebook-f'></i>
             </a>
             <a className='social-icon' href='#'>
-              <i className='fab fa-reddit'></i>
+            <i className="fab fa-stack-overflow"></i>
             </a>
             <a className='social-icon' href='#'>
               <i className='fas fa-marker'></i>
