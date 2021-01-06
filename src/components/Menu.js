@@ -1,9 +1,17 @@
+import { Nav } from 'react-bootstrap'
+
 const Menu = () => {
   return (
     <>
-      <nav className='navbar navbar-expand-lg bg-secondary fixed-top' id='mainNav'>
+      <Nav
+        className='navbar navbar-expand-lg bg-secondary fixed-top'
+        id='mainNav'
+      >
         <div className='container'>
-          <a className='navbar-brand js-scroll-trigger text-uppercase' href='#page-top'>
+          <a
+            className='navbar-brand js-scroll-trigger text-uppercase'
+            href='#page-top'
+          >
             chris achinga
           </a>
           <button
@@ -46,7 +54,7 @@ const Menu = () => {
             </ul>
           </div>
         </div>
-      </nav>
+      </Nav>
     </>
   )
 }
