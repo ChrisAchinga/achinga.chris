@@ -73,7 +73,7 @@ const Footer = () => {
       </footer>
       <section className='copyright py-4 text-center text-white'>
         <div className='container'>
-          <small className='pre-wrap'>Copyright © Chri Achinga {currentYear}</small>
+          <small className='pre-wrap'>Copyright © Chris Achinga {currentYear}</small>
         </div>
       </section>
       <div className='scroll-to-top d-lg-none position-fixed'>
