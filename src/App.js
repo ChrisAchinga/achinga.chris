@@ -1,32 +1,24 @@
 import './App.css'
+import './body.css'
+import './heading.css'
 import Menu from './components/Menu'
-import About from './components/About'
-// import Experience from './components/Experience'
-// import Education from './components/Education'
-// import Skills from './components/Skills'
-// import Interest from './components/Interest'
-// import Awards from './components/Awards'
 import Footer from './components/Footer'
+import Header from './components/Header'
+import Portfolio from './components/Portfolio'
+import About from './components/About'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
     <>
-      <Menu />
-      <div className='container-fluid p-0'>
+      <body id='page-top'>
+        <Menu />
+        <Header />
+        <Portfolio />
         <About />
-        <hr className='m-0' />
-        {/* <Experience /> */}
-        {/* <hr className='m-0' /> */}
-        {/* <Education /> */}
-        {/* <hr className='m-0' /> */}
-        {/* <Skills /> */}
-        {/* <hr className='m-0' /> */}
-        {/* <Interest /> */}
-        {/* <hr className='m-0' /> */}
-        {/* <Awards /> */}
-        {/* <hr className='m-0' /> */}
+        <Contact />
         <Footer />
-      </div>
+      </body>
     </>
   )
 }
