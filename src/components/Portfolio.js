@@ -9,9 +9,7 @@ import safe from '../img/portfolio/safe.png'
 import submarine from '../img/portfolio/submarine.png'
 
 const Portfolio = () => {
-  const portfolio = [
-    {}
-  ]
+ 
   return (
     <>
       <section className='page-section portfolio' id='skills'>
