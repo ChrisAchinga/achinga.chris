@@ -30,9 +30,9 @@ const Menu = () => {
               <li className='nav-item mx-0 mx-lg-1'>
                 <a
                   className='nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger'
-                  href='#portfolio'
+                  href='#skills'
                 >
-                  PORTFOLIO
+                  SKILLS
                 </a>
               </li>
               <li className='nav-item mx-0 mx-lg-1'>

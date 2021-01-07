@@ -1,4 +1,4 @@
-import { Container, Card, Button, Col } from 'react-bootstrap'
+import { Container, Card, Button, Col, Row } from 'react-bootstrap'
 
 // images
 import cabin from '../img/portfolio/cabin.png'
@@ -9,13 +9,16 @@ import safe from '../img/portfolio/safe.png'
 import submarine from '../img/portfolio/submarine.png'
 
 const Portfolio = () => {
+  const portfolio = [
+    {}
+  ]
   return (
     <>
-      <section className='page-section portfolio' id='portfolio'>
+      <section className='page-section portfolio' id='skills'>
         <Container>
           <div className='text-center'>
             <h2 className='page-section-heading text-secondary mb-0 d-inline-block text-capitalize'>
-              my portfolio
+              my skills
             </h2>
           </div>
           <div className='divider-custom'>
@@ -25,79 +28,78 @@ const Portfolio = () => {
             </div>
             <div className='divider-custom-line'></div>
           </div>
-          <div className='row justify-content-center'>
-
-            <Col md={6} lg={4} mb={5} className="mt-5">
+          <div className='text-center'>
+            <button className='btn text-secondary mb-0 d-inline-block text-capitalize'>
+              view my resume
+            </button>
+          </div>
+          <Row className='justify-content-center'>
+            <Col md={6} lg={4} mb={5} className='mt-5'>
               <Card className='portfolio-item mx-auto'>
                 <Card.Img className='img-fluid' src={cabin} alt='Tasty Cake' />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>FrontEnd</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    
                   </Card.Text>
-                  <Button variant='primary'>Go somewhere</Button>
+                  <Button variant='primary'>Details</Button>
                 </Card.Body>
               </Card>
             </Col>
 
-            <Col md={6} lg={4} mb={5} className="mt-5">
+            <Col md={6} lg={4} mb={5} className='mt-5'>
               <Card className='portfolio-item mx-auto'>
                 <Card.Img className='img-fluid' src={cake} alt='Tasty Cake' />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>BackEnd</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    
                   </Card.Text>
-                  <Button variant='primary'>Go somewhere</Button>
+                  <Button variant='primary'>Details</Button>
                 </Card.Body>
               </Card>
             </Col>
 
-            <Col md={6} lg={4} mb={5} className="mt-5">
+            <Col md={6} lg={4} mb={5} className='mt-5'>
               <Card className='portfolio-item mx-auto'>
                 <Card.Img className='img-fluid' src={circus} alt='Tasty Cake' />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>REST APIs</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    
                   </Card.Text>
-                  <Button variant='primary'>Go somewhere</Button>
+                  <Button variant='primary'>Details</Button>
                 </Card.Body>
               </Card>
             </Col>
 
-            <Col md={6} lg={4} mb={5} className="mt-5">
+            <Col md={6} lg={4} mb={5} className='mt-5'>
               <Card className='portfolio-item mx-auto'>
                 <Card.Img className='img-fluid' src={game} alt='Tasty Cake' />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Version Control</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    
                   </Card.Text>
-                  <Button variant='primary'>Go somewhere</Button>
+                  <Button variant='primary'>Details</Button>
                 </Card.Body>
               </Card>
             </Col>
 
-            <Col md={6} lg={4} mb={5} className="mt-5">
+            <Col md={6} lg={4} mb={5} className='mt-5'>
               <Card className='portfolio-item mx-auto'>
                 <Card.Img className='img-fluid' src={safe} alt='Tasty Cake' />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Soft Skills</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    
                   </Card.Text>
-                  <Button variant='primary'>Go somewhere</Button>
+                  <Button variant='primary'>Details</Button>
                 </Card.Body>
               </Card>
             </Col>
 
-            <Col md={6} lg={4} mb={5} className="mt-5">
+            <Col md={6} lg={4} mb={5} className='mt-5'>
               <Card className='portfolio-item mx-auto'>
                 <Card.Img
                   className='img-fluid'
@@ -105,16 +107,15 @@ const Portfolio = () => {
                   alt='Tasty Cake'
                 />
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>Team Work</Card.Title>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    
                   </Card.Text>
-                  <Button variant='primary'>Go somewhere</Button>
+                  <Button variant='primary'>Details</Button>
                 </Card.Body>
               </Card>
             </Col>
-          </div>
+          </Row>
         </Container>
       </section>
     </>

@@ -7,30 +7,30 @@ const About = () => {
         <div className='container'>
           <div className='text-center'>
             <h2 className='page-section-heading d-inline-block text-white'>
-              ABOUT
+              ABOUT (me)
             </h2>
           </div>
           <div className='divider-custom divider-light'>
             <div className='divider-custom-line'></div>
             <div className='divider-custom-icon'>
-              <i className='fas fa-star'></i>
+              <i className='fas fa-fighter-jet'></i>
             </div>
             <div className='divider-custom-line'></div>
           </div>
           <div className='row'>
             <div className='col-lg-4 ml-auto'>
               <p className='pre-wrap lead'>
-                Freelancer is a free bootstrap theme created by Start Bootstrap.
-                The download includes the complete source files including HTML,
-                CSS, and JavaScript as well as optional SASS stylesheets for
-                easy customization.
+                I have an ambitious personality and thrives on challenges. While
+                setting new goals for myself, I aim for results that will make
+                me more productive and effective in my environment.
               </p>
             </div>
             <div className='col-lg-4 mr-auto'>
               <p className='pre-wrap lead'>
-                You can create your own custom avatar for the masthead, change
-                the icon in the dividers, and add your email address to the
-                contact form to make it fully functional!
+                I am not comfortable with settling for something I’m not
+                comfortable with, thus looking for opportunities wh ere I can
+                get to perform better. I enjoy interacting with people and
+                sharing my skill and also learning from them.
               </p>
             </div>
           </div>
