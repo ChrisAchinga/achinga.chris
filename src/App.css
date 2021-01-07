@@ -7294,7 +7294,7 @@ h3 {
       font-size: 1.5rem; } }
 
 .portfolio .portfolio-item {
-  cursor: pointer;
+  cursor: auto;
   position: relative;
   display: block;
   max-width: 25rem;
