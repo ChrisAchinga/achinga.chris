@@ -1,4 +1,5 @@
-import React from 'react'
+// import { useState } from 'react'
+import { Button } from 'react-bootstrap'
 
 const About = () => {
   return (
@@ -17,6 +18,7 @@ const About = () => {
             </div>
             <div className='divider-custom-line'></div>
           </div>
+
           <div className='row'>
             <div className='col-lg-4 ml-auto'>
               <p className='pre-wrap lead'>
@@ -33,6 +35,12 @@ const About = () => {
                 sharing my skill and also learning from them.
               </p>
             </div>
+          </div>
+
+          <div className='text-center'>
+            <Button variant='secondary' size='lg' className='text-capitalize' block>
+              view full resume (document)
+            </Button>
           </div>
         </div>
       </section>
