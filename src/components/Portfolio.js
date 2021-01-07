@@ -44,82 +44,108 @@ const Portfolio = () => {
               </Modal.Header>
               <Modal.Body>
                 <Card>
-                  <Card.Header>Featured</Card.Header>
+                  <Card.Header>{name} | Skills </Card.Header>
                   <Card.Body>
                     <Card.Title>Special title treatment</Card.Title>
                     <Card.Text>
                       With supporting text below as a natural lead-in to
                       additional content.
                     </Card.Text>
-                    <Button variant='primary'>Go somewhere</Button>
+                    <Button variant='primary'>read fulll resume</Button>
                   </Card.Body>
                 </Card>
               </Modal.Body>
               <Modal.Footer>
-                <Button variant='secondary' onClick={handleClose}>
+                <Button variant='danger' onClick={handleClose}>
                   Close
                 </Button>
               </Modal.Footer>
             </Modal>
           </div>
+
           <Row className='justify-content-center'>
             <Col md={6} lg={4} mb={5} className='mt-5'>
-              <Card className='portfolio-item mx-auto'>
+              <Card className='portfolio-item mx-auto' border="secondary">
                 <Card.Img className='img-fluid' src={cabin} alt='Tasty Cake' />
                 <Card.Body>
                   <Card.Title>FrontEnd</Card.Title>
                   <Card.Text></Card.Text>
-                  <Button variant='primary'>Details</Button>
+                  <Button variant='secondary'>Details</Button>
                 </Card.Body>
+                <Card.Footer>
+                    <small className='text-muted'>
+                      Last updated 3 mins ago
+                    </small>
+                  </Card.Footer>
               </Card>
             </Col>
 
             <Col md={6} lg={4} mb={5} className='mt-5'>
-              <Card className='portfolio-item mx-auto'>
+              <Card className='portfolio-item mx-auto' border="secondary">
                 <Card.Img className='img-fluid' src={cake} alt='Tasty Cake' />
                 <Card.Body>
                   <Card.Title>BackEnd</Card.Title>
                   <Card.Text></Card.Text>
-                  <Button variant='primary'>Details</Button>
+                  <Button variant='secondary'>Details</Button>
                 </Card.Body>
+                <Card.Footer>
+                    <small className='text-muted'>
+                      Last updated 3 mins ago
+                    </small>
+                  </Card.Footer>
               </Card>
             </Col>
 
             <Col md={6} lg={4} mb={5} className='mt-5'>
-              <Card className='portfolio-item mx-auto'>
+              <Card className='portfolio-item mx-auto' border="secondary">
                 <Card.Img className='img-fluid' src={circus} alt='Tasty Cake' />
                 <Card.Body>
                   <Card.Title>REST APIs</Card.Title>
                   <Card.Text></Card.Text>
-                  <Button variant='primary'>Details</Button>
+                  <Button variant='secondary'>Details</Button>
                 </Card.Body>
+                <Card.Footer>
+                    <small className='text-muted'>
+                      Last updated 3 mins ago
+                    </small>
+                  </Card.Footer>
               </Card>
             </Col>
 
             <Col md={6} lg={4} mb={5} className='mt-5'>
-              <Card className='portfolio-item mx-auto'>
+              <Card className='portfolio-item mx-auto' border="secondary">
                 <Card.Img className='img-fluid' src={game} alt='Tasty Cake' />
                 <Card.Body>
                   <Card.Title>Version Control</Card.Title>
                   <Card.Text></Card.Text>
-                  <Button variant='primary'>Details</Button>
+                  <Button variant='secondary'>Details</Button>
                 </Card.Body>
+                <Card.Footer>
+                    <small className='text-muted'>
+                      Last updated 3 mins ago
+                    </small>
+                  </Card.Footer>
               </Card>
             </Col>
 
             <Col md={6} lg={4} mb={5} className='mt-5'>
-              <Card className='portfolio-item mx-auto'>
+              <Card className='portfolio-item mx-auto' border="secondary">
                 <Card.Img className='img-fluid' src={safe} alt='Tasty Cake' />
                 <Card.Body>
                   <Card.Title>Soft Skills</Card.Title>
                   <Card.Text></Card.Text>
-                  <Button variant='primary'>Details</Button>
+                  <Button variant='secondary'>Details</Button>
                 </Card.Body>
+                <Card.Footer>
+                    <small className='text-muted'>
+                      Last updated 3 mins ago
+                    </small>
+                  </Card.Footer>
               </Card>
             </Col>
 
             <Col md={6} lg={4} mb={5} className='mt-5'>
-              <Card className='portfolio-item mx-auto'>
+              <Card className='portfolio-item mx-auto' border="secondary">
                 <Card.Img
                   className='img-fluid'
                   src={submarine}
@@ -128,8 +154,13 @@ const Portfolio = () => {
                 <Card.Body>
                   <Card.Title>Team Work</Card.Title>
                   <Card.Text></Card.Text>
-                  <Button variant='primary'>Details</Button>
+                  <Button variant='c'>Details</Button>
                 </Card.Body>
+                <Card.Footer>
+                    <small className='text-muted'>
+                      Last updated 3 mins ago
+                    </small>
+                  </Card.Footer>
               </Card>
             </Col>
           </Row>
