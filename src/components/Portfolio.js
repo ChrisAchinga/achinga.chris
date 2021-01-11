@@ -83,7 +83,13 @@ const Portfolio = () => {
                   </Card.Body>
                   <Card.Footer>
                     <small className='text-muted'>
-                      Last updated 3 mins ago
+                      <a
+                        href='https://chrisdev.hashnode.dev/'
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        Blog | Technical Articles
+                      </a>
                     </small>
                   </Card.Footer>
                 </Card>
