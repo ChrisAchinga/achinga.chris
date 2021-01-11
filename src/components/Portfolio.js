@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Container, Card, Button, Col, Row, Modal } from 'react-bootstrap'
 
-
 // data
 import portfolio from '../data/portfolio'
 
@@ -40,14 +39,23 @@ const Portfolio = () => {
               </Modal.Header>
               <Modal.Body>
                 <Card>
-                  <Card.Header>{name} | Skills </Card.Header>
+                  <Card.Header>{name} (human_being)| Skills </Card.Header>
                   <Card.Body>
-                    <Card.Title>Special title treatment</Card.Title>
+                    <Card.Title>Elavator Pitch (introduction)</Card.Title>
                     <Card.Text>
                       With supporting text below as a natural lead-in to
                       additional content.
                     </Card.Text>
-                    <Button variant='primary'>read fulll resume</Button>
+                    <Button variant='success'>
+                      {' '}
+                      <a
+                        href='https://www.dropbox.com/s/mz0asx4fu3wce87/chris_achinga%28beta2%29%20.docx?dl=0'
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        read full resume
+                      </a>{' '}
+                    </Button>
                   </Card.Body>
                 </Card>
               </Modal.Body>

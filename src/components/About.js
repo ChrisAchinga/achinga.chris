@@ -38,8 +38,15 @@ const About = () => {
           </div>
 
           <div className='text-center'>
-            <Button variant='secondary' size='lg' className='text-capitalize' block>
-              view full resume (document)
+            <Button
+              variant='secondary'
+              size='lg'
+              className='text-capitalize'
+              block
+            >
+              <a href='https://www.dropbox.com/s/mz0asx4fu3wce87/chris_achinga%28beta2%29%20.docx?dl=0' target="_blank" rel="noreferrer">
+                view full resume (document)
+              </a>
             </Button>
           </div>
         </div>
