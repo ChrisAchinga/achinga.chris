@@ -45,13 +45,13 @@ const portfolio = [
     id: '8',
     title: 'Core Competencies',
     image: '/images/submarine.png',
-    brief_description: 'My soft skills makes me competent and stand out',
+    brief_description: 'My soft skills makes me competent and stand out.',
   },
   {
     id: '9',
     title: 'General Programming',
     image: '/images/submarine.png',
-    brief_description: 'Data Structures and Algorithms practical knowledge in problem solving',
+    brief_description: 'Data Structures and Algorithms practical knowledge in problem solving.',
   },
 ]
 
