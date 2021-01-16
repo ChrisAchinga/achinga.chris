@@ -2,7 +2,7 @@ const portfolio = [
   {
     id: '1',
     title: 'Frontend',
-    image: '/images/cabin.png',
+    image: '/images/front_end.png',
     brief_description: 'Creating and designing user interfaces that are accessible and simple to use',
   },
   {
