@@ -22,8 +22,8 @@ const About = () => {
           <div className='row'>
             <div className='col-lg-4 ml-auto'>
               <p className='pre-wrap lead'>
-                I have an ambitious personality and thrives on challenges. While
-                setting new goals for myself, I aim for results that will make
+                Chris (me) has an ambitious personality and thrives on challenges. While
+                setting new goals for myself, he aims for results that will make
                 me more productive and effective in my environment.
               </p>
             </div>
