@@ -79,7 +79,7 @@ const Portfolio = () => {
                   <Card.Body>
                     <Card.Title>{content.title}</Card.Title>
                     <Card.Text>{content.brief_description}</Card.Text>
-                    {/* <Button variant='secondary'>Details</Button> */}
+                    <Button variant='secondary'>Details</Button>
                   </Card.Body>
                   <Card.Footer>
                     <small className='text-muted'>
