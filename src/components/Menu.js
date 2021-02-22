@@ -1,4 +1,4 @@
-import { Nav } from 'react-bootstrap'
+import { Nav, Button } from 'react-bootstrap'
 
 const Menu = () => {
   return (
@@ -14,7 +14,7 @@ const Menu = () => {
           >
             chris achinga
           </a>
-          <button
+          <Button
             className='navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded'
             type='button'
             data-toggle='collapse'
@@ -23,8 +23,8 @@ const Menu = () => {
             aria-expanded='false'
             aria-label='Toggle navigation'
           >
-            Menu <i className='fas fa-bars'></i>
-          </button>
+            Menu <i className='fas fa-bars ml-2'></i>
+          </Button>
           <div className='collapse navbar-collapse' id='navbarResponsive'>
             <ul className='navbar-nav ml-auto'>
               <li className='nav-item mx-0 mx-lg-1'>
