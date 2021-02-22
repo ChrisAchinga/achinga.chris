@@ -1,6 +1,6 @@
 {
-  "name": "chris.dev",
-  "version": "2.0.0",
+  "name": "chris-dev",
+  "version": "2.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",

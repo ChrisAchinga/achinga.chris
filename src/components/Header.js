@@ -20,7 +20,7 @@ const Header = () => {
             <div className='divider-custom-line'></div>
           </div>
           <p className='pre-wrap masthead-subheading font-weight-light mb-0'>
-            Software Developer (the)
+            Software Developer (human)
           </p>
         </Container>
       </header>

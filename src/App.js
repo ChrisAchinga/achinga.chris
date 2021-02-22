@@ -1,6 +1,3 @@
-import './App.css'
-import './body.css'
-import './heading.css'
 import Menu from './components/Menu'
 import Footer from './components/Footer'
 import Header from './components/Header'

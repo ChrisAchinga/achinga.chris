@@ -8,7 +8,7 @@ const About = () => {
         <div className='container'>
           <div className='text-center'>
             <h2 className='page-section-heading d-inline-block text-white'>
-              ABOUT (me)
+              ABOUT ME (professionaly speaking...)
             </h2>
           </div>
           <div className='divider-custom divider-light'>

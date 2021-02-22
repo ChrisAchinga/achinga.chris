@@ -23,8 +23,13 @@ const Contact = () => {
                 <div className='icon-contact mb-3'>
                   <i className='fas fa-mobile-alt'></i>
                 </div>
-                <div className='text-muted'>Phone</div>
-                <div className='lead font-weight-bold'>+(254) 740-428522</div>
+                <div className='text-muted'>Call/SMS</div>
+                <a
+                  className='lead font-weight-bold'
+                  href='tel:+254740428522'
+                >
+                  +254 740 428-522
+                </a>
               </div>
             </Col>
             <Col lg={4}>
