@@ -5,7 +5,8 @@
       "@/components/*": ["components/*"],
       "@/globals/*": ["components/globals/*"],
       "@/style/*": ["styles/*"],
-      "@/layout/*": ["layout/*"]
+      "@/layout/*": ["layout/*"],
+      "@/config/*": ["config/*"]
     }
   }
 }
