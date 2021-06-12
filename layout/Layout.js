@@ -1,15 +1,19 @@
 import Seo from '@/globals/Seo'
+import Header from '@/globals/Header'
+import Footer from '@/globals/Footer'
 
 const Layout = ({ children, pageTitle, pageDescription, pageURL }) => {
   return (
-    <div>
+    <>
       <Seo
         pageDescription={pageDescription}
         pageTitle={pageTitle}
         pageURL={pageURL}
       />
+      <Header />
       <main>{children}</main>
-    </div>
+      <Footer />
+    </>
   )
 }
 
