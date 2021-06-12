@@ -1,6 +1,10 @@
+import Link from 'next/link'
+
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <div>Footer
+            <Link href='/sitemap'>Sitemap</Link>
+        </div>
     )
 }
 
