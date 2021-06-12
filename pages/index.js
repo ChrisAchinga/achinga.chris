@@ -25,7 +25,7 @@ const Home = ({ data }) => {
 export default Home
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/api/`)
+  const res = await fetch(`${API_URL}/api`)
   const data = await res.json()
 
   console.log(data)
