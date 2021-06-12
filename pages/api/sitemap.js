@@ -28,6 +28,11 @@ export default (req, res) => {
         name: 'Sitemap',
         link: '/sitemap',
       },
+      {
+        id: 6,
+        name: 'Message',
+        link: '/message',
+      },
     ],
   })
 }
