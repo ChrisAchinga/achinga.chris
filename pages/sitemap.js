@@ -7,8 +7,8 @@ const fetcher = (url) => fetch(url).then((res) => res.json())
 const Sitemap = () => {
   const { data, error } = useSwr('/api/sitemap', fetcher)
 
-  if (error) return <div>Failed to load data</div>
-  if (!data) return <div>Loading...</div>
+  if (error) return <Layout>Failed to load data</Layout>
+  if (!data) return <Layout>Loading...</Layout>
 
   return (
     <Layout
