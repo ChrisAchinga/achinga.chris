@@ -11,7 +11,7 @@ export default (req, res) => {
       {
         id: 2,
         name: 'Blogs and Articles',
-        link: '/blogs',
+        link: '/blog',
       },
       {
         id: 3,
@@ -27,6 +27,11 @@ export default (req, res) => {
         id: 5,
         name: 'Sitemap',
         link: '/sitemap',
+      },
+      {
+        id: 6,
+        name: 'Message',
+        link: '/message',
       },
     ],
   })
