@@ -5,11 +5,10 @@ import Layout from '@/layout/Layout'
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
 const Home = () => {
-
   const { data, error } = useSwr('/api', fetcher)
 
-  if (error) return <div>Failed to load data</div>
-  if (!data) return <div>Loading...</div>
+  if (error) return <Layout>Failed to load data</Layout>
+  if (!data) return <Layout>Searching For Chris' Data</Layout>
 
   return (
     <Layout>
