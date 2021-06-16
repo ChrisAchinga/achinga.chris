@@ -1,7 +1,7 @@
 import Layout from '@/layout/Layout'
 
 const Projects = ({ repos }) => {
-  console.log('GitHub REPOS', repos)
+  // console.log('GitHub REPOS', repos)
   return (
     <Layout
       pageTitle='Chris Achinga Projects'
