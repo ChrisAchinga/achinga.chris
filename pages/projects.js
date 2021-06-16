@@ -8,6 +8,10 @@ const Projects = () => {
       pageURL='https://chrisdev.vercel.app/projects'
     >
       <h1>My Projects</h1>
+      <p>My Projects explanations and bla bla goes here</p>
+
+      <h2>GitHUB Repos</h2>
+      
     </Layout>
   )
 }

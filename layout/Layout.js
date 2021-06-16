@@ -1,3 +1,5 @@
+import Script from 'next/script'
+
 import Seo from '@/globals/Seo'
 import Header from '@/globals/Header'
 import Footer from '@/globals/Footer'
