@@ -2,7 +2,7 @@ import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
 import Layout from '@/layout/Layout'
 
 const Blog = ({ posts }) => {
-  // console.log('posts', posts)
+  console.log('posts', posts)
   return (
     <Layout
       pageTitle='Chris Achinga Technical Articles'
@@ -41,6 +41,8 @@ export async function getStaticProps() {
               slug
               title
               brief
+              dateAdded
+              dateUpdated
             }
           }
         }
