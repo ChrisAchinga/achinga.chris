@@ -8,7 +8,7 @@ import Footer from '@/globals/Footer'
 
 const Layout = ({ children, pageTitle, pageDescription, pageURL }) => {
   return (
-    <>
+    <div id="page-top">
       <Seo
         pageDescription={pageDescription}
         pageTitle={pageTitle}
@@ -35,7 +35,7 @@ const Layout = ({ children, pageTitle, pageDescription, pageURL }) => {
         src='../public/scripts/scripts.js'
         strategy='afterInteractive'
       /> */}
-    </>
+    </div>
   )
 }
 
