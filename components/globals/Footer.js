@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Footer = ({ facebook, twitter, linkedin, pinterest }) => {
   const year = new Date().getFullYear()
   return (
-    <div className='bg-dark text-white p-3'>
+    <div>
       <footer className=' footer text-center'>
         <div className='container'>
           <div className='row'>
