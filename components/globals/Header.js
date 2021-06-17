@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <header>
+    <header className='mb-4'>
       {/* <nav>
         <Link href='/'>home</Link>
         <Link href='/resume'>resume</Link>
