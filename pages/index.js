@@ -1,6 +1,7 @@
 import useSwr from 'swr'
 import Layout from '@/layout/Layout'
 import Hero from '@/home/Hero'
+import SectionHead from '@/globals/SectionHead'
 import Divider from '@/globals/Divider'
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
@@ -14,6 +15,7 @@ const Home = () => {
   return (
     <Layout>
       <Hero myName={data.fullName} />
+      <SectionHead section='Core Skills' />
       <Divider />
       {/* contact info */}
       {data.contacts.map((data) => (
