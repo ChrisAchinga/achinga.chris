@@ -1,6 +1,7 @@
 import useSwr from 'swr'
 import Layout from '@/layout/Layout'
 import Hero from '@/home/Hero'
+import SkillCard from '@/home/SkillCard'
 import SectionHead from '@/globals/SectionHead'
 import Divider from '@/globals/Divider'
 
@@ -17,6 +18,9 @@ const Home = () => {
       <Hero myName={data.fullName} />
       <SectionHead section='Core Skills' />
       <Divider />
+      {/* skills */}
+        <SkillCard />
+
       {/* contact info */}
       {data.contacts.map((data) => (
         <div key={data.id}>
