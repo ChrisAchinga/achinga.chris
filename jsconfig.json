@@ -4,6 +4,7 @@
     "paths": {
       "@/components/*": ["components/*"],
       "@/globals/*": ["components/globals/*"],
+      "@/home/*": ["components/homePage/*"],
       "@/style/*": ["styles/*"],
       "@/layout/*": ["layout/*"],
       "@/config/*": ["config/*"]
