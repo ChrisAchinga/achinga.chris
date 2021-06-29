@@ -157,9 +157,9 @@ const Message = () => {
           <div className='row gx-5 row-cols-2 row-cols-lg-4 py-5'>
             <div className='col'>
               <div className='feature bg-primary bg-gradient text-white rounded-3 mb-3'>
-                <i className='bi bi-chat-dots'></i>
+              <i className="fab fa-facebook-messenger"></i>
               </div>
-              <div className='h5 mb-2'>Chat with us</div>
+              <div className='h5 mb-2'>Chat on Messenger</div>
               <p className='text-muted mb-0'>
                 Chat live with one of our support specialists.
               </p>
