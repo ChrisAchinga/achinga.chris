@@ -19,7 +19,18 @@ const Home = () => {
       <SectionHead section='Core Skills' />
       <Divider />
       {/* skills */}
-        <SkillCard />
+      <section className='bg-light py-5'>
+        <div className='container px-5 my-5'>
+          <div className='row gx-5 justify-content-center'>
+            <SkillCard />
+            <SkillCard />
+            <SkillCard />
+            <SkillCard />
+            <SkillCard />
+            <SkillCard />
+          </div>
+        </div>
+      </section>
 
       {/* contact info */}
       {data.contacts.map((data) => (
@@ -38,15 +49,3 @@ const Home = () => {
 }
 
 export default Home
-
-// export async function getStaticProps() {
-//   const res = await fetch(`${API_URL}/api`)
-//   const data = await res.json()
-
-//   // console.log(data)
-
-//   return {
-//     props: { data },
-//     revalidate: 1,
-//   }
-// }
